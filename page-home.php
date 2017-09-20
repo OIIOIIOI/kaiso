@@ -3,6 +3,9 @@
  * Template Name: Accueil
  * Description: Accueil
  */
+
+get_header();
+
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -50,3 +53,7 @@
 	<?php endif; ?>
 
 <?php endwhile; ?>
+
+<?php
+
+get_footer();

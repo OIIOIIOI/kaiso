@@ -3,6 +3,9 @@
  * Template Name: Artiste
  * Description: Artiste
  */
+
+get_header();
+
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -18,3 +21,7 @@
 	<a href="<?php the_field('website'); ?>"><?php the_field('website') ?></a>
 
 <?php endwhile; ?>
+
+<?php
+
+get_footer();
