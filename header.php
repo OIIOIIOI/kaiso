@@ -18,12 +18,12 @@
 		<nav>
 			<?php
 				wp_nav_menu( array(
-					'theme_location' => 'menu',
+					'theme_location' => 'main-menu',
 					'menu_id' => 'main-menu',
 				) );
 			?>
 		</nav>
-        
+
 	</header>
 
 	<div class="content">
