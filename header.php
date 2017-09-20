@@ -15,6 +15,8 @@
 
 	<header class="site-header">
 
+        <p>HEADER</p>
+
 		<nav>
 			<?php
 				wp_nav_menu( array(
