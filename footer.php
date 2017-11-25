@@ -11,8 +11,6 @@
 
 ?>
 
-	</div><!-- .content -->
-
 	<footer class="site-footer">
         <p>FOOTER</p>
 	</footer>

@@ -11,21 +11,19 @@
 
 <body <?php body_class(); ?>>
 
-<div class="wrapper">
+<div class="main-wrapper">
 
-	<header class="site-header">
-
-        <p>HEADER</p>
-
-		<nav>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'main-menu',
-					'menu_id' => 'main-menu',
-				) );
-			?>
-		</nav>
-
+	<header class="site-header wrapper">
+        <h1><?php echo bloginfo('name'); ?></h1>
 	</header>
 
-	<div class="content">
+    <nav id="main-navigation">
+		<?php
+		wp_nav_menu( array(
+			'theme_location' => 'main-menu',
+			'menu_id' => 'main-menu',
+			'menu_class' => 'wrapper',
+			'container' => '',
+		) );
+		?>
+    </nav>
