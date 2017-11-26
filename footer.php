@@ -12,7 +12,7 @@
 ?>
 
 	<footer class="site-footer">
-        <p>FOOTER</p>
+
 	</footer>
 
 </div><!-- .wrapper -->
