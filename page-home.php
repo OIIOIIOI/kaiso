@@ -122,6 +122,7 @@ get_header();
                         <div class="content-cell two-thirds">
                             <h2><?php the_title(); ?></h2>
 	                        <?php the_content(); ?>
+<!--                            TODO the excerpt so that we can add photos and stuff in the content without it showing on home-->
                         </div>
                     </div>
 	            <?php endforeach; ?>
