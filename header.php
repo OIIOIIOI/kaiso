@@ -16,6 +16,7 @@
 	<?php
     $header_img_url = '';
     // TODO get home page ID from page template to use in getfield random image
+    // TODO is single OR is page and not home
     if (is_single() && has_post_thumbnail(get_queried_object_id())) :
 	    $header_img_url = get_the_post_thumbnail_url();
 	else :
