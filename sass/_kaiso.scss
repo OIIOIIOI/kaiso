@@ -56,6 +56,55 @@ section {
   }
 }
 
+section#news {
+  .news-cell {
+    .title {
+      font-weight: bold;
+    }
+    .content {
+      font-size: 0.85em;
+      margin-top: 0.5em;
+    }
+    .moretag {
+      margin-top: 0.25em;
+    }
+  }
+  .dates {
+    ul {
+      padding-left: 2em;
+
+      li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 0.7em;
+
+        span {
+          display: block;
+        }
+        span.date {
+          position: relative;
+          font-weight: bold;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0.55em;
+            left: -1em;
+            background-color: $kaiso-orange-alt;
+            width: 0.4em;
+            height: 0.4em;
+            border-radius: 1em;
+            box-shadow: 2px 2px 0 #E0E0E0;
+          }
+        }
+        span.place {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
 section#label {
   position: relative;
   background: {
@@ -107,13 +156,22 @@ section#artists {
         left: 15%;
         width: 70%;
         height: 1px;
-        background-color: transparentize($kaiso-blue, 0.5);
+        background-color: transparentize($kaiso-orange-alt, 0.5);
       }
     }
   }
 }
 
-
+article {
+  h1, h2, h3 {
+    color: $kaiso-orange-alt;
+    text-shadow: 3px 3px 0 #E0E0E0;
+  }
+  .published-date {
+    font-style: italic;
+    font-size: 0.85em;
+  }
+}
 
 
 

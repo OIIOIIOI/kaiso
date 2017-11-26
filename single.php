@@ -9,27 +9,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <nav id="main-navigation">
+        <ul id="main-menu" class="wrapper">
+            <li>
+                <a href="<?php echo site_url(); ?>">Retour</a>
+            </li>
+        </ul>
+    </nav>
 
-		<?php
-		while ( have_posts() ) : the_post();
+	<article class="wrapper">
+		<?php while ( have_posts() ) : the_post(); ?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+            <h1><?php the_title(); ?></h1>
 
-			the_post_navigation();
+            <?php the_content(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+            <p class="published-date">Publié le <?php the_date(); ?></p>
 
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		<?php endwhile; ?>
+	</article>
 
 <?php
-get_sidebar();
 get_footer();

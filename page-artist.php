@@ -16,10 +16,6 @@ get_header();
 
 	<p><?php the_content(); ?></p>
 
-	<p><?php the_field('music_player'); ?></p>
-
-	<a href="<?php the_field('website'); ?>"><?php the_field('website') ?></a>
-
 <?php endwhile; ?>
 
 <?php

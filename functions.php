@@ -123,9 +123,8 @@ function kaiso_scripts() {
     wp_enqueue_script( 'kaiso-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, true );
 	wp_enqueue_script( 'kaiso-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), false, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	if (is_home() || is_page_template('page-home.php'))
+		wp_enqueue_script( 'kaiso-script', get_template_directory_uri() . '/js/kaiso.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'kaiso_scripts' );
 
@@ -155,4 +154,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+	global $post;
+	return '...<br><a class="moretag" href="'.get_permalink($post->ID).'">Lire la suite</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 

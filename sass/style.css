@@ -2104,6 +2104,37 @@ section.dark h1, section.dark h2, section.dark h3 {
   color: #4dbf99;
   text-shadow: 3px 3px 0 #202020; }
 
+section#news .news-cell .title {
+  font-weight: bold; }
+section#news .news-cell .content {
+  font-size: 0.85em;
+  margin-top: 0.5em; }
+section#news .news-cell .moretag {
+  margin-top: 0.25em; }
+section#news .dates ul {
+  padding-left: 2em; }
+  section#news .dates ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 0.7em; }
+    section#news .dates ul li span {
+      display: block; }
+    section#news .dates ul li span.date {
+      position: relative;
+      font-weight: bold; }
+      section#news .dates ul li span.date:before {
+        content: '';
+        position: absolute;
+        top: 0.55em;
+        left: -1em;
+        background-color: #e99708;
+        width: 0.4em;
+        height: 0.4em;
+        border-radius: 1em;
+        box-shadow: 2px 2px 0 #E0E0E0; }
+    section#news .dates ul li span.place {
+      font-size: 0.9em; }
+
 section#label {
   position: relative;
   background-color: #202020;
@@ -2143,6 +2174,13 @@ section#artists .artist-row {
       left: 15%;
       width: 70%;
       height: 1px;
-      background-color: rgba(77, 191, 153, 0.5); }
+      background-color: rgba(233, 151, 8, 0.5); }
+
+article h1, article h2, article h3 {
+  color: #e99708;
+  text-shadow: 3px 3px 0 #E0E0E0; }
+article .published-date {
+  font-style: italic;
+  font-size: 0.85em; }
 
 /*# sourceMappingURL=style.css.map */
