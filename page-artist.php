@@ -21,8 +21,6 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
-            <p class="published-date">Publié le <?php the_date(); ?></p>
-
 		<?php endwhile; ?>
     </article>
 
