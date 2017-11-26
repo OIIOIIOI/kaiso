@@ -32,7 +32,7 @@
  */
 /* Document
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700&amp;subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600|Roboto+Slab:400,700&amp;subset=latin-ext);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -449,7 +449,7 @@ body {
   font-size: 1.4rem;
   background-color: #fff;
   color: #333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.4; }
   @media (min-width: 480px) {
     body {
@@ -2068,14 +2068,47 @@ ul.is-unstyled, ul.unstyled {
 .ratio-16-9:before {
   padding-top: 56.25%; }
 
+.site-header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .site-header .wrapper {
+    position: relative;
+    text-align: center; }
+    .site-header .wrapper img {
+      width: 100%;
+      max-width: 512px; }
+    .site-header .wrapper h1 {
+      color: white;
+      text-shadow: 3px 3px 0 #202020;
+      padding: 2em 0; }
+  .site-header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.55); }
+
 .main-wrapper > * {
-  padding: 6rem 2rem; }
+  padding: 6rem 0; }
 .main-wrapper nav {
   padding: 0; }
 
 .wrapper {
   max-width: 1024px;
   margin: auto; }
+
+.padded-tb {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
+.padded-lr {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 nav#main-navigation {
   background-color: #202020; }
@@ -2104,13 +2137,15 @@ section.dark h1, section.dark h2, section.dark h3 {
   color: #4dbf99;
   text-shadow: 3px 3px 0 #202020; }
 
-section#news .news-cell .title {
-  font-weight: bold; }
-section#news .news-cell .content {
-  font-size: 0.85em;
-  margin-top: 0.5em; }
-section#news .news-cell .moretag {
-  margin-top: 0.25em; }
+section#news .news-cell {
+  margin-bottom: 1.5em; }
+  section#news .news-cell .title {
+    font-weight: bold; }
+  section#news .news-cell .content {
+    font-size: 0.85em;
+    margin-top: 0.5em; }
+  section#news .news-cell .moretag {
+    margin-top: 0.25em; }
 section#news .dates ul {
   padding-left: 2em; }
   section#news .dates ul li {
@@ -2146,7 +2181,8 @@ section#label {
   section#label .wrapper {
     position: relative; }
   section#label .image-cell {
-    align-self: center; }
+    align-self: center;
+    margin-bottom: 1.5em; }
   section#label:before {
     content: '';
     display: block;
@@ -2159,6 +2195,8 @@ section#label {
 
 section#artists .artist-row {
   position: relative; }
+  section#artists .artist-row .player-cell {
+    margin-bottom: 1.5em; }
   section#artists .artist-row iframe {
     max-width: 100% !important;
     max-height: 100% !important; }

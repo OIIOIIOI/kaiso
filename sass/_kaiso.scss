@@ -1,7 +1,41 @@
 
+.site-header {
+  position: relative;
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  };
+
+  .wrapper {
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 512px;
+    }
+    h1 {
+      color: white;
+      text-shadow: 3px 3px 0 $color1;
+      padding: 2em 0;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($color1, 0.45);
+  }
+}
+
 .main-wrapper {
   > * {
-    padding: $padding-tb $padding-lr;
+    padding: $padding-tb 0;
   }
   nav {
     padding: 0;
@@ -11,6 +45,15 @@
 .wrapper {
   max-width: 1024px;
   margin: auto;
+}
+
+.padded-tb {
+  padding-top: $padding-tb;
+  padding-bottom: $padding-tb;
+}
+.padded-lr {
+  padding-left: $padding-lr;
+  padding-right: $padding-lr;
 }
 
 nav#main-navigation {
@@ -58,6 +101,8 @@ section {
 
 section#news {
   .news-cell {
+    margin-bottom: 1.5em;
+
     .title {
       font-weight: bold;
     }
@@ -121,6 +166,7 @@ section#label {
   }
   .image-cell {
     align-self: center;
+    margin-bottom: 1.5em;
   }
   &:before {
     content: '';
@@ -138,6 +184,9 @@ section#artists {
   .artist-row {
     position: relative;
 
+    .player-cell {
+      margin-bottom: 1.5em;
+    }
     iframe {
       max-width: 100% !important;
       max-height: 100% !important;

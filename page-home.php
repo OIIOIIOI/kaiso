@@ -27,7 +27,7 @@ get_header();
     <!-- NEWS & DATES ============================================ -->
 
     <?php if ($news_posts || $date_posts): ?>
-        <section id="news" class="wrapper">
+        <section id="news" class="wrapper padded-lr">
             <div class="grid-2 has-gutter-xl">
                 <!-- NEWS -->
 	            <?php if ($news_posts): ?>
@@ -85,7 +85,7 @@ get_header();
 
     <!-- LABEL ============================================ -->
 
-    <section id="label" class="dark">
+    <section id="label" class="dark padded-lr">
         <div class="wrapper">
             <div class="grid-2 has-gutter-xl">
                 <div class="image-cell one-third">
@@ -102,7 +102,7 @@ get_header();
     <!-- ARTISTS ============================================ -->
 
 	<?php if ($artist_posts): ?>
-        <section id="artists">
+        <section id="artists" class="padded-lr">
             <div class="wrapper">
 	            <?php foreach ($artist_posts as $post): ?>
 		            <?php setup_postdata($post); ?>

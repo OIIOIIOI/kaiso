@@ -1,5 +1,5 @@
 // Config file and project variables
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700&amp;subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600|Roboto+Slab:400,700&amp;subset=latin-ext);
 
 // tiny font sizes (mobile first)
 $base-font-size : 1.4rem !default; // ex. 1.4rem would be "14px" equivalent
@@ -22,7 +22,7 @@ $h5-size-l        : 1.8rem !default; // equiv "18px"
 $h6-size-l        : 1.6rem !default; // equiv "16px"
 
 // font stacks
-$font-stack-common    : "Open Sans",sans-serif !default; // system font stack
+$font-stack-common    : "Raleway",sans-serif !default; // system font stack
 $font-stack-headings  : "Roboto Slab", sans-serif !default; // headings font
 $font-stack-monospace : consolas, courier, monospace !default; // monospace font
 

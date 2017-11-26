@@ -17,7 +17,7 @@ get_header(); ?>
         </ul>
     </nav>
 
-	<article class="wrapper">
+	<article class="wrapper padded-lr">
 		<?php while ( have_posts() ) : the_post(); ?>
 
             <h1><?php the_title(); ?></h1>
