@@ -23,6 +23,7 @@ get_header();
 
 	<?php $news_posts = get_field('news'); ?>
 	<?php $artist_posts = get_field('artists'); ?>
+	<?php $distributor_posts = get_field('distributors'); ?>
 
     <!-- NEWS & DATES ============================================ -->
 
@@ -125,6 +126,28 @@ get_header();
 <!--                            TODO the excerpt so that we can add photos and stuff in the content without it showing on home-->
                         </div>
                     </div>
+	            <?php endforeach; ?>
+	            <?php wp_reset_postdata(); ?>
+            </div>
+        </section>
+	<?php endif; ?>
+
+    <!-- DISTRIBUTORS ============================================ -->
+
+    <?php if ($distributor_posts): ?>
+        <section id="contact" class="padded-lr">
+            <div class="wrapper">
+	            <?php foreach ($distributor_posts as $post): ?>
+		            <?php setup_postdata($post); ?>
+		            <!-- 
+                    <?php
+                    if (get_field('link'))
+                        the_field('link');
+                    // else
+                        // the_post_thumbnail();
+                    ?>
+                     -->
+                    <!-- <h2><?php the_title(); ?></h2> -->
 	            <?php endforeach; ?>
 	            <?php wp_reset_postdata(); ?>
             </div>
