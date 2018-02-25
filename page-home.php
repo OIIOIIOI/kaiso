@@ -149,11 +149,13 @@ get_header();
                             <?php foreach ($distributor_posts as $post): ?>
                                 <?php setup_postdata($post); ?>
                                 <div>
-                                    <?php
-                                    if (get_field('link'))
-                                        the_field('link');
-                                    ?>
+                                    <?php if (get_field('link')) : ?>
+                                        <a href="<?php the_field('link'); ?>" target="_blank">
+                                    <?php endif; ?>
                                     <?php the_post_thumbnail(); ?>
+                                    <?php if (get_field('link')) : ?>
+                                        </a>
+                                    <?php endif; ?>
                                     <h2><?php the_title(); ?></h2>
                                 </div>
                             <?php endforeach; ?>
