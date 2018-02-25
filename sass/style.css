@@ -761,10 +761,10 @@ q {
 
 q,
 .q {
-  quotes: "ÔÇ£\00a0" "\00a0ÔÇØ"; }
+  quotes: "“\00a0" "\00a0”"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "┬½\00a0" "\00a0┬╗"; }
+    quotes: "«\00a0" "\00a0»"; }
 
 hr {
   display: block;
@@ -2133,9 +2133,11 @@ nav#main-navigation {
 section h1, section h2, section h3 {
   color: #e99708;
   text-shadow: 3px 3px 0 #E0E0E0; }
-section.dark h1, section.dark h2, section.dark h3 {
-  color: #4dbf99;
-  text-shadow: 3px 3px 0 #202020; }
+section.dark {
+  background-color: #202020; }
+  section.dark h1, section.dark h2, section.dark h3 {
+    color: #4dbf99;
+    text-shadow: 3px 3px 0 #202020; }
 
 section#news .news-cell {
   margin-bottom: 1.5em; }
