@@ -90,10 +90,10 @@ get_header();
     <section id="label" class="dark padded-lr">
         <div class="wrapper">
             <div class="grid-2 has-gutter-xl">
-                <div class="image-cell one-third">
+                <div class="image-cell one-quarter">
 		            <?php the_post_thumbnail(); ?>
                 </div>
-                <div class="content-cell two-thirds">
+                <div class="content-cell two-quarters">
                     <h1><?php the_title(); ?></h1>
 		            <?php the_content(); ?>
                 </div>
