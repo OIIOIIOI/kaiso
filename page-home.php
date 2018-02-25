@@ -152,7 +152,7 @@ get_header();
                                     <?php if (get_field('link')) : ?>
                                         <a href="<?php the_field('link'); ?>" target="_blank">
                                     <?php endif; ?>
-                                    <?php the_post_thumbnail('medium', array('alt' => get_the_title())); ?>
+                                    <?php the_post_thumbnail('medium', array('alt' => get_the_title(), 'title' => get_the_title())); ?>
                                     <?php if (get_field('link')) : ?>
                                         </a>
                                     <?php endif; ?>
