@@ -145,7 +145,7 @@ get_header();
                     </div>
                     <div class="three-quarters">
                         <h2>Distributeurs</h2>
-                        <div class="grid">
+                        <div class="grid has-gutter-l distributors-list">
                             <?php foreach ($distributor_posts as $post): ?>
                                 <?php setup_postdata($post); ?>
                                 <div>

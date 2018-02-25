@@ -2216,6 +2216,9 @@ section#artists .artist-row {
       height: 1px;
       background-color: rgba(233, 151, 8, 0.5); }
 
+section#contact .distributors-list > div {
+  text-align: center; }
+
 article h1, article h2, article h3 {
   color: #e99708;
   text-shadow: 3px 3px 0 #E0E0E0; }

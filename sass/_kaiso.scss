@@ -213,6 +213,14 @@ section#artists {
   }
 }
 
+section#contact {
+  .distributors-list {
+    > div {
+      text-align: center;
+    }
+  }
+}
+
 article {
   h1, h2, h3 {
     color: $kaiso-orange-alt;
