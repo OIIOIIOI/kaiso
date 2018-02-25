@@ -142,6 +142,8 @@ get_header();
                     <div class="one-quarter">
                         <h2>Contact</h2>
                         <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
+                        <p>2, Le Rocher 35250 Andouillé-Neuville</p>
+                        <p><a href="mailto:kaiso.records@gmail.com">kaiso.records@gmail.com</a></p>
                     </div>
                     <div class="three-quarters">
                         <h2>Distributeurs</h2>
