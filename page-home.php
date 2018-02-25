@@ -137,15 +137,22 @@ get_header();
     <?php if ($distributor_posts): ?>
         <section id="contact" class="dark padded-lr">
             <div class="wrapper">
-	            <?php foreach ($distributor_posts as $post): ?>
-		            <?php setup_postdata($post); ?>
-                    <?php
-                    if (get_field('link'))
-                        the_field('link');
-                    ?>
-                    <h2><?php the_title(); ?></h2>
-	            <?php endforeach; ?>
-	            <?php wp_reset_postdata(); ?>
+                <div class="grid-2 has-gutter-xl">
+                    <div class="one-fourth">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="three-fourth">
+                        <?php foreach ($distributor_posts as $post): ?>
+                            <?php setup_postdata($post); ?>
+                            <?php
+                            if (get_field('link'))
+                                the_field('link');
+                            ?>
+                            <h2><?php the_title(); ?></h2>
+                        <?php endforeach; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                </div>
             </div>
         </section>
 	<?php endif; ?>
