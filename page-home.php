@@ -152,11 +152,10 @@ get_header();
                                     <?php if (get_field('link')) : ?>
                                         <a href="<?php the_field('link'); ?>" target="_blank">
                                     <?php endif; ?>
-                                    <?php the_post_thumbnail(); ?>
+                                    <?php the_post_thumbnail('medium', array('alt' => get_the_title())); ?>
                                     <?php if (get_field('link')) : ?>
                                         </a>
                                     <?php endif; ?>
-                                    <h2><?php the_title(); ?></h2>
                                 </div>
                             <?php endforeach; ?>
                             <?php wp_reset_postdata(); ?>
