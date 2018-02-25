@@ -144,7 +144,7 @@ get_header();
                         <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
                     </div>
                     <div class="three-quarters">
-                        <h3>Distributeurs</h3>
+                        <h2>Distributeurs</h2>
                         <div class="grid">
                             <?php foreach ($distributor_posts as $post): ?>
                                 <?php setup_postdata($post); ?>
