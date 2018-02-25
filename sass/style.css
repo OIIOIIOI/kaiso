@@ -2134,7 +2134,8 @@ section h1, section h2, section h3 {
   color: #e99708;
   text-shadow: 3px 3px 0 #E0E0E0; }
 section.dark {
-  background-color: #202020; }
+  background-color: #202020;
+  color: white; }
   section.dark h1, section.dark h2, section.dark h3 {
     color: #4dbf99;
     text-shadow: 3px 3px 0 #202020; }
@@ -2174,12 +2175,10 @@ section#news .dates ul {
 
 section#label {
   position: relative;
-  background-color: #202020;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/calypso_bg.jpg");
-  color: white; }
+  background-image: url("../img/calypso_bg.jpg"); }
   section#label .wrapper {
     position: relative; }
   section#label .image-cell {

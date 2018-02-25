@@ -93,6 +93,7 @@ section {
 
   &.dark {
     background-color: $color1;
+    color: white;
 
     h1, h2, h3 {
       color: $kaiso-blue;
@@ -155,13 +156,11 @@ section#news {
 section#label {
   position: relative;
   background: {
-    color: $color1;
     position: center;
     size: cover;
     repeat: no-repeat;
     image: url('../img/calypso_bg.jpg');
   };
-  color: white;
 
   .wrapper {
     position: relative;
