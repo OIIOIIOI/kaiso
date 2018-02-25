@@ -139,15 +139,11 @@ get_header();
             <div class="wrapper">
 	            <?php foreach ($distributor_posts as $post): ?>
 		            <?php setup_postdata($post); ?>
-		            <!-- 
                     <?php
                     if (get_field('link'))
                         the_field('link');
-                    // else
-                        // the_post_thumbnail();
                     ?>
-                     -->
-                    <!-- <h2><?php the_title(); ?></h2> -->
+                    <h2><?php the_title(); ?></h2>
 	            <?php endforeach; ?>
 	            <?php wp_reset_postdata(); ?>
             </div>
