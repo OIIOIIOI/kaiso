@@ -23,6 +23,7 @@ get_header();
 
 	<?php $news_posts = get_field('news'); ?>
 	<?php $artist_posts = get_field('artists'); ?>
+	<?php $kaiso_logo = get_field('kaiso_records_logo'); ?>
 	<?php $distributor_posts = get_field('distributors'); ?>
 
     <!-- NEWS & DATES ============================================ -->
@@ -140,6 +141,7 @@ get_header();
                 <div class="grid-2 has-gutter-xl">
                     <div class="one-fourth">
                         <h2>Contact</h2>
+                        <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
                     </div>
                     <div class="three-fourth">
                         <?php foreach ($distributor_posts as $post): ?>
