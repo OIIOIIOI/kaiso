@@ -90,10 +90,10 @@ get_header();
     <section id="label" class="dark padded-lr">
         <div class="wrapper">
             <div class="grid-2 has-gutter-xl">
-                <div class="image-cell one-quarter">
+                <div class="image-cell one-third">
 		            <?php the_post_thumbnail(); ?>
                 </div>
-                <div class="content-cell two-quarters">
+                <div class="content-cell two-thirds">
                     <h1><?php the_title(); ?></h1>
 		            <?php the_content(); ?>
                 </div>
@@ -139,11 +139,11 @@ get_header();
         <section id="contact" class="dark padded-lr">
             <div class="wrapper">
                 <div class="grid-2 has-gutter-xl">
-                    <div class="one-fourth">
+                    <div class="one-quarter">
                         <h2>Contact</h2>
                         <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
                     </div>
-                    <div class="three-fourth">
+                    <div class="three-quarters">
                         <?php foreach ($distributor_posts as $post): ?>
                             <?php setup_postdata($post); ?>
                             <?php
