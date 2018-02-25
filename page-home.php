@@ -23,7 +23,7 @@ get_header();
 
 	<?php $news_posts = get_field('news'); ?>
 	<?php $artist_posts = get_field('artists'); ?>
-	<?php $kaiso_logo = get_field('kaiso_records_logo'); ?>
+	<?php $kaiso_logo = get_field('logo_kaiso_records'); ?>
 	<?php $distributor_posts = get_field('distributors'); ?>
 
     <!-- NEWS & DATES ============================================ -->
