@@ -135,7 +135,7 @@ get_header();
     <!-- DISTRIBUTORS ============================================ -->
 
     <?php if ($distributor_posts): ?>
-        <section id="contact" class="padded-lr">
+        <section id="contact" class="dark padded-lr">
             <div class="wrapper">
 	            <?php foreach ($distributor_posts as $post): ?>
 		            <?php setup_postdata($post); ?>
