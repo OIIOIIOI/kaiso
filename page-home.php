@@ -144,15 +144,21 @@ get_header();
                         <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
                     </div>
                     <div class="three-quarters">
-                        <?php foreach ($distributor_posts as $post): ?>
-                            <?php setup_postdata($post); ?>
-                            <?php
-                            if (get_field('link'))
-                                the_field('link');
-                            ?>
-                            <h2><?php the_title(); ?></h2>
-                        <?php endforeach; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <h3>Distributeurs</h3>
+                        <div class="grid">
+                            <?php foreach ($distributor_posts as $post): ?>
+                                <?php setup_postdata($post); ?>
+                                <div>
+                                    <?php
+                                    if (get_field('link'))
+                                        the_field('link');
+                                    ?>
+                                    <?php the_post_thumbnail(); ?>
+                                    <h2><?php the_title(); ?></h2>
+                                </div>
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
                     </div>
                 </div>
             </div>
