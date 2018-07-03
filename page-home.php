@@ -143,8 +143,8 @@ get_header();
                         <h2>Contact</h2>
                         <img src="<?php echo $kaiso_logo; ?>" alt="Logo Kaiso Records">
                         <p>
-                            2, Le Rocher
-                            <br>35250 Andouillé-Neuville
+                            38, L'Amplardais
+                            <br>35490 Gahard
                         </p>
                         <p><a href="mailto:kaiso.records@gmail.com">kaiso.records@gmail.com</a></p>
                     </div>
